@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import django_heroku
 BASE_DIR = Path(__file__).resolve().parent.parent
 #SECRET_KEY = 'django-insecure-gjhb#@otaez+zz84)6uce8q(zx+w2zhish=-8(ao+umdv^#_f$'
 SECRET_KEY = 'e4616b3714cd56104389ab6fcfc4a80a6b5057b050197e58'
@@ -98,3 +99,5 @@ AWS_S3_REGION_NAME = 'us-east-2'
 AWS_S3_SIGNATURE_VERSION = 's3v4'
 AWS_S3_VERIFY = True
 AWS_S3_ADDRESSING_STYLE = "virtual"
+
+django_heroku.settings(locals())
