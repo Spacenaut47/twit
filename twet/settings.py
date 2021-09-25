@@ -4,7 +4,7 @@ import django_heroku
 BASE_DIR = Path(__file__).resolve().parent.parent
 #SECRET_KEY = 'django-insecure-gjhb#@otaez+zz84)6uce8q(zx+w2zhish=-8(ao+umdv^#_f$'
 SECRET_KEY = 'e4616b3714cd56104389ab6fcfc4a80a6b5057b050197e58'
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['twet1.herokuapp.com']
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
